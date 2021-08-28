@@ -35,16 +35,12 @@ SHIPS IN 5-6 WEEKS">
   <link rel="icon" type="image/png" sizes="32x32" href="../Assets/favicon-32x328b9a.png?v=11993505977033946260">
   <link rel="icon" type="image/png" sizes="96x96" href="../Assets/favicon-96x9614bf.png?v=12435803360369970359">
   <link rel="icon" type="image/png" sizes="16x16" href="../Assets/favicon-16x165d71.png?v=16157078672135185305">
-  <link rel="manifest" href="http://cdn.shopify.com/s/files/1/0068/5015/0457/t/4/assets/manifest.json?v=17015371057635045950">
   <meta name="msapplication-TileColor" content="#ffffff">
   <link href="../Assets/ms-icon-144x144ea57.png?v=6105199869634354362" rel="shortcut icon" sizes="16x16 32x32 64x64">
 
 
-  <script>
-    var TRAVIS = TRAVIS || {};
-  </script>
-
 <link href="/main0e34.css?v=16357540465480959826" rel="stylesheet" type="text/css" media="all" />
+<script src="https://js.stripe.com/v3/"></script>
 
 <style id="shopify-dynamic-checkout-cart">@media screen and (min-width: 750px) {
   #shopify-dynamic-checkout-cart {
@@ -73,21 +69,20 @@ SHIPS IN 5-6 WEEKS">
       </span>
     </a>
 
+  <a href="https://instagram.com" class="N__link N__top_left js-toplink">Social</a>
 
-        <a href="https://instagram.com" class="N__link N__top_left js-toplink">Social</a>
-
-        <a href="/About" class="N__link N__bottom_left">About</a>
-        <a class="N__link N__top_right js-toplink" href="cart.html" onclick="DisplayCart();" data-js-cart-action-open>
-            Cart
-            <span class="sr-only">:</span>
-            <span class="N__cart_count js-cart-count" data-js-cart-count>
+  <a href="/About" class="N__link N__bottom_left">About</a>
+    <a class="N__link N__top_right js-toplink"  onclick="DisplayCart(); CartOpen();">
+      Cart
+      <span class="sr-only">:</span>
+      <span class="N__cart_count js-cart-count">
         <span class="datacount">0</span>
-        <span class="sr-only" data-js-cart-count-label>Items</span>
+        <span class="sr-only">Items</span>
       </span>
-        </a>
+    </a>
 
 
-        <a href="/Contact" class="N__link N__bottom_right">Contact</a>
+  <a href="/Contact" class="N__link N__bottom_right">Contact</a>
 
 </nav>
 
@@ -96,64 +91,39 @@ SHIPS IN 5-6 WEEKS">
 <div class="Header js-header"></div>
 
       <main class="B__container" id="main">
-        <h1 class="sr-only">CACTUS JACK FOR FRAGMENT CREATE TEE</h1>
 
     <div id="js-content" class="B__content">
       <div id="P__6732003246207" class="SingleProduct js-product">
-        <script type="application/json" class="js-product-json">
-  {"id":6732003246207,"title":"CACTUS JACK FOR FRAGMENT CREATE TEE","handle":"cactus-jack-for-fragment-create-your-world-tee","vendor":"FRAGMENT","type":"Shirt","available":true,"media": [{"alt":null,"id":22066959384703,"position":1,"preview_image":{"aspect_ratio":1.0,"height":2500,"width":2500,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0068\/5015\/0457\/products\/08_01_9b000401-8888-4834-915e-808d09555ca4.jpg?v=1628802719"},"aspect_ratio":1.0,"height":2500,"media_type":"image","src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0068\/5015\/0457\/products\/08_01_9b000401-8888-4834-915e-808d09555ca4.jpg?v=1628802719","width":2500},{"alt":null,"id":22066959417471,"position":2,"preview_image":{"aspect_ratio":1.0,"height":2500,"width":2500,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0068\/5015\/0457\/products\/08_02_updated.jpg?v=1628802719"},"aspect_ratio":1.0,"height":2500,"media_type":"image","src":"https:\/\/cdn.shopify.com\/s\/files\/1\/0068\/5015\/0457\/products\/08_02_updated.jpg?v=1628802719","width":2500}],"images":[{"src":"\/\/cdn.shopify.com\/s\/files\/1\/0068\/5015\/0457\/products\/08_01_9b000401-8888-4834-915e-808d09555ca4.jpg?v=1628802719","src_880":"\/\/cdn.shopify.com\/s\/files\/1\/0068\/5015\/0457\/products\/08_01_9b000401-8888-4834-915e-808d09555ca4_880x.jpg?v=1628802719","src_zoom" :"\/\/cdn.shopify.com\/s\/files\/1\/0068\/5015\/0457\/products\/08_01_9b000401-8888-4834-915e-808d09555ca4_1600x.jpg?v=1628802719","src_1600" :"\/\/cdn.shopify.com\/s\/files\/1\/0068\/5015\/0457\/products\/08_01_9b000401-8888-4834-915e-808d09555ca4_1600x.jpg?v=1628802719","src_700" :"\/\/cdn.shopify.com\/s\/files\/1\/0068\/5015\/0457\/products\/08_01_9b000401-8888-4834-915e-808d09555ca4_700x.jpg?v=1628802719","width": 2500,"height": 2500,"id": 28216342347903,"alt":"CACTUS JACK FOR FRAGMENT CREATE TEE"},{"src":"\/\/cdn.shopify.com\/s\/files\/1\/0068\/5015\/0457\/products\/08_02_updated.jpg?v=1628802719","src_880":"\/\/cdn.shopify.com\/s\/files\/1\/0068\/5015\/0457\/products\/08_02_updated_880x.jpg?v=1628802719","src_zoom" :"\/\/cdn.shopify.com\/s\/files\/1\/0068\/5015\/0457\/products\/08_02_updated_1600x.jpg?v=1628802719","src_1600" :"\/\/cdn.shopify.com\/s\/files\/1\/0068\/5015\/0457\/products\/08_02_updated_1600x.jpg?v=1628802719","src_700" :"\/\/cdn.shopify.com\/s\/files\/1\/0068\/5015\/0457\/products\/08_02_updated_700x.jpg?v=1628802719","width": 2500,"height": 2500,"id": 28216342380671,"alt":"CACTUS JACK FOR FRAGMENT CREATE TEE"}],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/0068\/5015\/0457\/products\/08_01_9b000401-8888-4834-915e-808d09555ca4.jpg?v=1628802719","options":["Size"],"tags":["08-12-21","081321","5-6 WEEKS","hover-show-second-image","image-zoom","shipping: ships in 5-6 WEEKS"],"price":4800,"variants":[{"id":39858887164031,"parent_id":6732003246207,"available":true,"featured_image":null,"public_title":null,"requires_shipping":true,"price":4800,"image_id": null,"options":["S"],"option1":"s","option2":"","option3":"","option4":""},{"id":39858887196799,"parent_id":6732003246207,"available":true,"featured_image":null,"public_title":null,"requires_shipping":true,"price":4800,"image_id": null,"options":["M"],"option1":"m","option2":"","option3":"","option4":""},{"id":39858887229567,"parent_id":6732003246207,"available":true,"featured_image":null,"public_title":null,"requires_shipping":true,"price":4800,"image_id": null,"options":["L"],"option1":"l","option2":"","option3":"","option4":""},{"id":39858887262335,"parent_id":6732003246207,"available":true,"featured_image":null,"public_title":null,"requires_shipping":true,"price":4800,"image_id": null,"options":["XL"],"option1":"xl","option2":"","option3":"","option4":""},{"id":39858887295103,"parent_id":6732003246207,"available":true,"featured_image":null,"public_title":null,"requires_shipping":true,"price":4800,"image_id": null,"options":["2XL"],"option1":"2xl","option2":"","option3":"","option4":""}],"meta":[]}
-</script>
+
 <div class="container">
   
   <article class="Product P__type-Shirt P__handle-cactus-jack-for-fragment-create-your-world-tee
-     P__tag-08-12-21 P__tag-081321 P__tag-5-6-weeks P__tag-hover-show-second-image P__tag-image-zoom P__tag-shipping-ships-in-5-6-weeks"
-    itemscope itemtype="http://schema.org/Product">
-    <input type="hidden" name="id" value="6732003246207">    <div class="P__img_row js-slideshow">
-          <div class="js-img-cell js-slide P__img-cell P__img-cell-0"
-            style="background-image:url('../products/08_01_9b000401-8888-4834-915e-808d09555ca4_1500xd4db.jpg?v=1628802719')"
-            
-            data-alt="CACTUS JACK FOR FRAGMENT CREATE TEE"
-            data-image-id="22066959384703"
-            data-zoom-src="../products/08_01_9b000401-8888-4834-915e-808d09555ca4_1500xd4db.jpg?v=1628802719">
-            <div class="P__img_bg">
-              <img class="P__img js-img js-img-0"
-                   height="2500" width="2500"
-                   src="../products/08_01_9b000401-8888-4834-915e-808d09555ca4_1500xd4db.jpg?v=1628802719" alt="CACTUS JACK FOR FRAGMENT CREATE TEE">
-              
-            </div>
-          </div>
-          <div class="js-img-cell js-slide P__img-cell P__img-cell-1"
-            style="background-image:url('../products/08_02_updated_1500xd4db.jpg?v=1628802719')"
-            
-            data-alt="CACTUS JACK FOR FRAGMENT CREATE TEE"
-            data-image-id="22066959417471"
-            data-zoom-src="../products/08_02_updated_1500xd4db.jpg?v=1628802719">
-            <div class="P__img_bg">
-              <img class="P__img js-img js-img-1"
-                   height="2500" width="2500"
-                   src="../products/08_02_updated_1500xd4db.jpg?v=1628802719" alt="CACTUS JACK FOR FRAGMENT CREATE TEE">
-              
-            </div>
-          </div>
-    </div>
+     P__tag-08-12-21 P__tag-081321 P__tag-5-6-weeks P__tag-hover-show-second-image P__tag-image-zoom P__tag-shipping-ships-in-5-6-weeks">
+        <div class="P__img_row js-slideshow">
+                <div class="flickity-viewport" style="height: 423px; touch-action: pan-y;">
+                <div class="flickity-slider" id="flislider" style="left: 0px; transform: translateX(0%);">
+                <div id="img1" onclick="datazoom();" class="js-img-cell js-slide P__img-cell P__img-cell-0 is-selected1" style="background-image: url(&quot;../products/08_01_9b000401-8888-4834-915e-808d09555ca4_1500xd4db.jpg?v=1628802719&quot;); position: absolute; left: 0%;" data-alt="CACTUS JACK FOR MASTERMIND SKULL TEE" data-image-id="22067273924735" data-zoom-src="../products/08_01_9b000401-8888-4834-915e-808d09555ca4_1500xd4db.jpg?v=1628802719">
+                        <div class="P__img_bg" style="width: 100%; height: 423px;">
+                          <img class="P__img js-img js-img-0" height="2500" width="2500" src="../products/08_01_9b000401-8888-4834-915e-808d09555ca4_1500xd4db.jpg?v=1628802719" alt="CACTUS JACK FOR MASTERMIND SKULL TEE">
 
+                        </div>
+                      </div><div id="img2" class="js-img-cell js-slide P__img-cell P__img-cell-1" style="background-image: url(&quot;../products/08_02_updated_1500xd4db.jpg?v=1628802719&quot;); position: absolute; left: 100%;" data-alt="TRAVIS TRAVIS MASTERMIND SKULL TEE" data-image-id="22067273891967" data-zoom-src="../products/08_02_updated_1500xd4db.jpg?v=1628802719" aria-hidden="true">
+                        <div class="P__img_bg" style="width: 100%; height: 423px;">
+                          <img class="P__img js-img js-img-1" height="2500" width="2500" src="../products/08_02_updated_1500xd4db.jpg?v=1628802719" alt="CACTUS JACK FOR MASTERMIND SKULL TEE">
 
+                        </div>
+                      </div></div></div><button class="flickity-button flickity-prev-next-button previous" onclick="previous();" type="button" aria-label="Previous"><svg class="flickity-button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path></svg></button><button class="flickity-button flickity-prev-next-button next" onclick="next();" type="button" aria-label="Next"><svg class="flickity-button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg></button></div>
+        </div>
     <div class="P__Info js-product-info">
       <h2
-        data-available="true"
-        data-tags="08-12-21 081321 5-6 WEEKS HOVER-SHOW-SECOND-IMAGE IMAGE-ZOOM SHIPPING: SHIPS IN 5-6 WEEKS"
-        class="PI__title js-product-title" itemprop="name"
+        class="PI__title js-product-title"
       >ROGER ROGER CREATE TEE</h2>
-        <form action="https://shop.travisscott.com/cart/add" class="js-product-form" method="post" enctype="multipart/form-data" data-js-cart-add-product>
-          <input type="hidden" name="quantity" value="1">
-          <input type="hidden" name="id" class="js-id" value="1">
+        <div class="js-product-form">
+
           <div class="PI__err js-error" style="display:none"></div>
-          
           <div
-            data-available="true"
-            data-tags="08-12-21 081321 5-6 WEEKS HOVER-SHOW-SECOND-IMAGE IMAGE-ZOOM SHIPPING: SHIPS IN 5-6 WEEKS"
+
             class="PI__desc js-add-description"
-            itemprop="description"
           >
             <p>WASHED AND TREATED GARMENT WITH WATERBASED SCREEN PRINT DETAILS AND DISCHARGE  <br>
 SHIPS IN 1-2 WEEKS</p>
@@ -228,7 +198,6 @@ SHIPS IN 1-2 WEEKS</p>
   </article>
 
 </div>
-<div class="cf"></div>
 
       </div>
     </div>
@@ -237,51 +206,82 @@ SHIPS IN 1-2 WEEKS</p>
         <div class="F__nav"><a href="faq.html" title="HELP" data-title="help" class="F__link"> HELP</a><a href="privacy-policy.html#CCPA" title="Do Not Sell My Personal Information" data-title="do not sell my personal information" class="F__link"> Do Not Sell My Personal Information</a><a href="terms.html" title="TERMS" data-title="terms" class="F__link"> TERMS</a><a href="privacy-policy.html" title="PRIVACY" data-title="privacy" class="F__link">BORRING STUFF</a></div>
     </footer>
 
-        <section
-                class="CartDrawer"
-                role="dialog"
-                aria-modal="true"
-                aria-labelledby="CartTitle"
-                aria-hidden="true"
-                data-js-cart-drawer
-        >
-            <div class="CartDrawer__main" data-js-cart-main>
-                <header class="CD__header">
-                    <h3 class="CD__header__title" id="CartTitle">
-                        Cart
-                        <span class="CD__header__count" data-js-cart-count>
-          (<span class="CD__header__count-number" data-js-cart-count-number></span>
-            <span class="datacount1">0</span>
-          <span class="CD__header__count-label" data-js-cart-count-label></span>)
+<section
+  id="CartDrawer"
+  class="CartDrawer"
+>
+  <div class="CartDrawer__main" onclick="CartOpen();">
+    <header class="CD__header">
+      <h3 class="CD__header__title" id="CartTitle">
+        Cart
+        <span class="CD__header__count">
+          (<span class="CD__header__count-number"></span>
+          <span class="datacount1">0</span>
+          <span class="CD__header__count-label" ></span>)
         </span>
-                    </h3>
-                    <button type="button" class="CD__close" data-js-cart-action-close>
-                        Close
-                        <span class="CD__close__icon" aria-hidden="true">
+
+      </h3>
+      <button id="closebtn" type="button" class="CD__close" onclick="closecart();" >
+        Close
+        <span class="CD__close__icon" aria-hidden="true">
           ×
         </span>
-                    </button>
-                </header>
-                <div class="CD__content" data-js-cart-content>
-                    <h3 onclick='clearCart()' class="button1">Clear Cart </h3>
-                    <form class="CD__form" action="/cart" method="post" autocomplete="off">
-                        <div class="CD__items">
-                            <table class="CD__table">
-                            </table>
-                        </div>
-                    </form>
-                </div>
-                <script id="cartDrawerItemsTemplate" type="text/x-tmpl-mustache"></script>
-                <script id="cartDrawerEmptyTemplate" type="text/x-tmpl-mustache"></script>
-            </div>
-        </section>
+      </button>
+    </header>
+    <div class="CD__content" >
+      <h3 onclick='clearCart()' class="button1">Clear Cart </h3>
+      <div class="CD__form">
+        <div class="CD__items">
+          <table class="CD__table">
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     </div>
-      <script src="../Assets/app-2021-07-270241.js?v=2252409066698244196" type="text/javascript"></script>
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                <div id="pswpcontain" class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+                <div id="pswp__bg" class="pswp__bg"></div>
+                <div class="pswp__scroll-wrap">
+                    <div class="pswp__container">
+                        <div class="pswp__item"></div>
+                        <div onclick="datazoominv();" class="pswp__item"><div class="pswp__zoom-wrap" ><img class="pswp__img" src="../products/08_02_updated_1500xd4db.jpg?v=1628802719"></div></div>
+                        <div onclick="datazoominv();" id="itemimg2" class="pswp__item" ><div class="pswp__zoom-wrap" ><img class="pswp__img" src="../products/08_01_9b000401-8888-4834-915e-808d09555ca4_1500xd4db.jpg?v=1628802719"></div></div>
+                        <div class="pswp__item" style="display: block; transform: translate3d(953px, 0px, 0px);"></div> </div>
+                    <div id="uiopen" class="pswp__ui pswp__ui--hidden">
+                        <div class="pswp__top-bar">
+                            <button  onclick="datazoominv();" class="pswp__button pswp__button--close" title="Close (Esc)">&times;</button>
 
 
+                            <div class="pswp__preloader">
+                                <div class="pswp__preloader__icn">
+                                  <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                            <div class="pswp__share-tooltip"></div>
+                        </div>
+
+                        <button onclick="previous1();" id="pswparrL" class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                          &#8249;
+                        </button>
+
+                        <button onclick="next1();" id="pswparrR" class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                          &#8250;
+                        </button>
+
+                        <div class="pswp__caption">
+                            <div class="pswp__caption__center"></div>
+                        </div>
+                    </div>
+                </div>
+  <script src="/payment.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script2.js"></script>
   </body>
-    <script src="script2.js"></script>
-
 </html>

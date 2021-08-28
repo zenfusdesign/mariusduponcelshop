@@ -1,0 +1,36 @@
+extends baseEmail
+
+block content
+  img(src='https://i.ibb.co/1qSP8hY/roger-roger-logo.png' style='width: 61px')
+  p HI #{firstName},
+  p Your purchase is complete !
+  p HERE IS A SUMMARY OF YOUR PURCHASE :
+  table.products(role='presentation' border='0' cellpadding='0' cellspacing='0')
+    thead
+      tr
+        th Product
+        th Quantity
+        th Price
+    tbody
+      each product in products
+        tr
+          td= product.productName
+          td= product.quantity
+          td $#{product.price}
+      tr
+        td
+        td
+        td Total: $#{totalPrice}
+  br
+  br
+  p Now you can flex width your new clothes
+  p CUSTOMER SERVICE
+  p CONTACT@ROGERROGER.COM
+  br
+  br
+  br
+  p INSTAGRAM
+  p FACEBOOK
+  br
+  br
+  p © 2021 ROGERROGER™. ALL RIGHTS RESERVED.

@@ -2,8 +2,123 @@ let carts = document.querySelectorAll('.btn-add')
 
 let products = [];
 
+function previous1 () {
+    let currentselect2 = document.getElementsByClassName("is-selected2")
+
+
+    if (currentselect2.length == 0) {
+       document.getElementById("itemimg2").classList.add("is-selected2")
+
+    } else {
+        document.getElementById("itemimg2").classList.remove("is-selected2")
+    }
+
+}
+
+function next1 () {
+    let currentselect3 = document.getElementsByClassName("is-selected2")
+
+    if (currentselect3.length == 0) {
+        document.getElementById("itemimg2").classList.add("is-selected2")
+    } else {
+        console.log('remove')
+        document.getElementById("itemimg2").classList.remove("is-selected2")
+    }
+
+}
+
+function datazoom() {
+    let doc = document.getElementsByClassName("soloitem")
+
+    if (doc.length == 1) {
+        document.getElementById("pswp__bg").style.opacity = "1";
+        document.getElementById("pswpcontain").classList.add("pswp--open", "pswp--notouch", "pswp--css_animation", "pswp--svg", "pswp--zoom-allowed", "pswp--visible", "pswp--animated-in", "pswp--has_mouse");
+        document.getElementById("uiopen").classList.add("pswp__ui--one-slide");
+        document.getElementById("uiopen").classList.remove("pswp__ui--hidden");
+    } else {
+        document.getElementById("pswp__bg").style.opacity = "1";
+        document.getElementById("pswpcontain").classList.add("pswp--open", "pswp--notouch", "pswp--css_animation", "pswp--svg", "pswp--zoom-allowed", "pswp--visible", "pswp--animated-in", "pswp--has_mouse");
+        document.getElementById("uiopen").classList.add("pswp__ui--one-slide");
+        document.getElementById("uiopen").classList.remove("pswp__ui--hidden");
+        document.getElementById("pswparrL").classList.add("displaychange");
+        document.getElementById("pswparrR").classList.add("displaychange");
+    }
+
+}
+
+function datazoominv() {
+    let doc = document.getElementsByClassName("soloitem")
+
+    if (doc.length == 1) {
+        document.getElementById("pswp__bg").style.opacity = "0";
+        document.getElementById("pswpcontain").classList.remove("pswp--open", "pswp--notouch", "pswp--css_animation", "pswp--svg", "pswp--zoom-allowed", "pswp--visible", "pswp--animated-in", "pswp--has_mouse");
+        document.getElementById("uiopen").classList.remove("pswp__ui--one-slide");
+        document.getElementById("uiopen").classList.add("pswp__ui--hidden");
+    } else {
+        document.getElementById("pswp__bg").style.opacity = "0";
+        document.getElementById("pswpcontain").classList.remove("pswp--open", "pswp--notouch", "pswp--css_animation", "pswp--svg", "pswp--zoom-allowed", "pswp--visible", "pswp--animated-in", "pswp--has_mouse");
+        document.getElementById("uiopen").classList.remove("pswp__ui--one-slide");
+        document.getElementById("uiopen").classList.add("pswp__ui--hidden");
+        document.getElementById("pswparrL").classList.remove("displaychange");
+        document.getElementById("pswparrR").classList.remove("displaychange");
+    }
+
+}
+
+function previous() {
+    let currentselect = document.getElementsByClassName("is-selected1")
+
+    if (currentselect.length == 0) {
+        document.getElementById("img1").classList.add("is-selected1");
+        document.getElementById("flislider").style.transform = "translateX(0%)";
+        document.getElementById("img2").classList.remove("is-selected");
+
+    } else {
+        document.getElementById("img2").classList.add("is-selected");
+        document.getElementById("flislider").style.transform = "translateX(-100%)";
+        document.getElementById("img1").classList.remove("is-selected1");
+    }
+
+}
+
+function next() {
+    let currentselect = document.getElementsByClassName("is-selected")
+
+    if (currentselect.length == 0) {
+        document.getElementById("img2").classList.add("is-selected");
+        document.getElementById("flislider").style.transform = "translateX(-100%)";
+        document.getElementById("img1").classList.remove("is-selected1");
+    } else {
+        document.getElementById("img1").classList.add("is-selected1");
+        document.getElementById("flislider").style.transform = "translateX(0%)";
+        document.getElementById("img2").classList.remove("is-selected");
+    }
+
+}
+
+
+function CartOpen () {
+    let currentcart = document.getElementsByClassName("is-open")
+    let currentcart1 = document.getElementsByClassName("is-open1")
+    const btn = document.getElementById("closebtn");
+
+    btn.addEventListener("click", () => {
+        document.getElementById("CartDrawer").classList.add("is-open1");
+    })
+
+
+    if (currentcart.length == 0) {
+        document.getElementById("CartDrawer").classList.add("is-open");
+    } else if (currentcart1.length == 1) {
+        document.getElementById("CartDrawer").classList.remove("is-open", "is-open1");
+    }
+
+
+}
+
 async function getProducts() {
-    const response  = await axios.get('https://roger-roger-b38ef.ondigitalocean.app/products')
+    // const response  = await axios.get('https://roger-roger-b38ef.ondigitalocean.app/products')
+    const response  = await axios.get('https://roger-roger-b38ef.ondigitalocean.app/')
     console.log(response.data)
     products = response.data.products
 
@@ -18,8 +133,6 @@ function populateProducts () {
         return (
             `
                   <article data-id="6732003180671"
-  data-available="true"
-  data-tags="08-12-21 081321 9-12 WEEKS HOVER-SHOW-SECOND-IMAGE IMAGE-ZOOM SHIPPING: SHIPS IN 9-12 WEEKS"
   class="ProductGridItem PGI__title_cactus-jack-for-mastermind-skull-tee PGI__6732003180671 js-product-grid-item type-shirt 08-12-21 081321 9-12 WEEKS hover-show-second-image image-zoom shipping: ships in 9-12 WEEKS"
 >
   <a href="/${product.url}" class="PGI__img_wrap js-grid-item-inner" tabindex="-1"
@@ -37,9 +150,6 @@ function populateProducts () {
   <h3 class="PGI__title">
     <a
       href="/${product.url}"
-      data-available="true"
-      data-tags="08-12-21 081321 9-12 WEEKS HOVER-SHOW-SECOND-IMAGE IMAGE-ZOOM SHIPPING: SHIPS IN 9-12 WEEKS"
-      data-id="6732003180671"
       class="PGI__title-link js-title js-product-title"
     >${product.name}</a>
   </h3>
@@ -200,22 +310,6 @@ function setItems(product) {
 
         } else {
             let newsize = document.getElementById('_938qedafx').value;
-            // let currentnumber = cartItems[currentProduct].inCart;
-            // let faischier = cartItems[currentProduct].size;
-
-            // if (faischier == 0) {
-            //     console.log('runnning')
-            // }
-            //
-            // if (newsize == 0) {
-            //     cartItems[currentProduct].inCart += 1;
-            //     console.log('ruuning2')
-            // } else {
-            //     product.inCart = 0;
-            //     console.log('arrete eu');
-            //     cartItems[currentProduct].size += " " +"("+ 1 +")"+ newsize;
-            //     cartItems[currentProduct].inCart += 1;
-            // }
             cartItems[currentProduct].size += " " +"("+ 1 +")"+ newsize;
             cartItems[currentProduct].inCart += 1;
             if (newsize == 0) {
@@ -281,14 +375,7 @@ function DisplayCart() {
                            <button
                                onclick='deleteButtons(this)'
                                type="button"
-                               href="#"
                                class="CD__remove"
-                               title="Remove: {{title}}"
-                               aria-label="Remove: {{title}}"
-                               data-product-id="{{id}}"
-                               data-key="{{key}}"
-                               data-product-quantity="{{quantity}}"
-                               data-js-cart-remove-product
                            >
                            <a>&times;</a>
                       </td>
@@ -303,30 +390,25 @@ function DisplayCart() {
                           </a>
                       </td>
                        <td class="CD__title-cell">
-                            <a class="CD__title" href="{{{url}}}">
+                            <a class="CD__title" href="${item.url}">
                                 ${item.name}
                             </a>
                        </td>
                        <td class="CD__title-cell">
-                            <a class="CD__title" href="{{{url}}}">
+                            <a class="CD__title" href="${item.url}">
                                 ${item.size}
                             </a>
                        </td>
                        <td class="CD__title-cell1">
-                            <a class="CD__title1" href="{{{url}}}">${item.name}</a>
+                            <a class="CD__title1" href="${item.url}">${item.name}</a>
                        </td>
-                       <td class="CD__qty-cell">
+                       <td class="CD__qty-cell" style="pointer-events: none">
                             <label for="updates_{{id}}" class="sr-only">
                                 Quantity
                             </label>
                             <input
                                 type="number"
                                 class="js-qty-input CD__qty-input"
-                                name="updates[]"
-                                data-key="{{key}}"
-                                id="updates_{{id}}"
-                                inputmode="numeric"
-                                pattern="[0-9]*"
                                 max="10"
                                 min="0"
                                 value="${item.inCart}"
@@ -336,6 +418,7 @@ function DisplayCart() {
                             $${item.inCart * item.price}
                        </td>
                 </div>
+                
                 `
          });
 
@@ -351,11 +434,11 @@ function DisplayCart() {
               $${cart}
             </div>
           </div>
-          <button type="submit" name="checkout" class="ButtonCallout CA__button-checkout">
+          <button onclick="startCheckout();" id="startCheckout" class="ButtonCallout CA__button-checkout">
             Checkout
           </button>
-          <div class="dynamic-checkout__content" id="shopify-dynamic-checkout-cart" data-shopify="dynamic-checkout-cart"></div>
-        </div>`
+        </div>
+        `
 
         // manageQuantity();
     }

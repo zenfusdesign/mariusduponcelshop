@@ -33,11 +33,8 @@
   <meta name="msapplication-TileImage" content="../Assets/ms-icon-144x144ea57.png?v=6105199869634354362">
   <link href="../Assets/ms-icon-144x144ea57.png?v=6105199869634354362" rel="shortcut icon" sizes="16x16 32x32 64x64">
 
-  <script>
-    var TRAVIS = TRAVIS || {};
-  </script>
-
 <link href="/main0e34.css?v=16357540465480959826" rel="stylesheet" type="text/css" media="all" />
+<script src="https://js.stripe.com/v3/"></script>
 
 <style id="shopify-dynamic-checkout-cart">@media screen and (min-width: 750px) {
   #shopify-dynamic-checkout-cart {
@@ -52,17 +49,15 @@
 </style>
 <link rel="canonical" href="/index1">
 </head>
-  <body class="page-cactus-jack template-index js-empty-cart "    
+  <body  class="page-cactus-jack template-index js-empty-cart "
+
     id="page-cactus-jack">
 
     <nav class="MainNavigation">
 
 <a href="/index1" aria-label="Homepage" class="N__link N__top_center N__person js-toplink">
       <span class="N__person-inner">
-
-
           <img
-
                   src="../Assets/roger-roger-logo.png?v=1606759885" style="width: 61px" class="N__custom_logo logo1">
       </span>
     </a>
@@ -71,12 +66,12 @@
   <a href="https://instagram.com" class="N__link N__top_left js-toplink">Social</a>
 
   <a href="/About=" class="N__link N__bottom_left">About</a>
-    <a class="N__link N__top_right js-toplink" href="cart.html" onclick="DisplayCart();" data-js-cart-action-open>
+    <a class="N__link N__top_right js-toplink" onclick="DisplayCart(); CartOpen();">
       Cart
       <span class="sr-only">:</span>
-      <span class="N__cart_count js-cart-count" data-js-cart-count>
+      <span class="N__cart_count js-cart-count">
         <span class="datacount">0</span>
-        <span class="sr-only" data-js-cart-count-label>Items</span>
+        <span class="sr-only" >Items</span>
       </span>
     </a>
   
@@ -396,50 +391,42 @@
   </footer>
 
 <section
+  id="CartDrawer"
   class="CartDrawer"
-  role="dialog"
-  aria-modal="true"
-  aria-labelledby="CartTitle"
-  aria-hidden="true"
-  data-js-cart-drawer
 >
-  <div class="CartDrawer__main" data-js-cart-main>
+  <div class="CartDrawer__main" onclick="CartOpen();">
     <header class="CD__header">
       <h3 class="CD__header__title" id="CartTitle">
         Cart
-        <span class="CD__header__count" data-js-cart-count>
-          (<span class="CD__header__count-number" data-js-cart-count-number></span>
+        <span class="CD__header__count">
+          (<span class="CD__header__count-number"></span>
           <span class="datacount1">0</span>
-          <span class="CD__header__count-label" data-js-cart-count-label></span>)
+          <span class="CD__header__count-label" ></span>)
         </span>
 
       </h3>
-      <button type="button" class="CD__close" data-js-cart-action-close>
+      <button id="closebtn" type="button" class="CD__close" onclick="closecart();" >
         Close
         <span class="CD__close__icon" aria-hidden="true">
           ×
         </span>
       </button>
     </header>
-    <div class="CD__content" data-js-cart-content>
+    <div class="CD__content" >
       <h3 onclick='clearCart()' class="button1">Clear Cart </h3>
-      <form class="CD__form" action="/cart" method="post" autocomplete="off">
+      <div class="CD__form">
         <div class="CD__items">
           <table class="CD__table">
           </table>
         </div>
-      </form>
+      </div>
     </div>
-    <script id="cartDrawerItemsTemplate" type="text/x-tmpl-mustache"></script>
-    <script id="cartDrawerEmptyTemplate" type="text/x-tmpl-mustache"></script>
   </div>
 </section>
     </div>
 </div>
-      <script src="/app-2021-07-270241.js?v=2252409066698244196" type="text/javascript"></script>
+      <script src="/payment.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <script src="/script2.js"></script>
-
-
   </body>
 </html>

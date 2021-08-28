@@ -6,7 +6,7 @@ exports.productList = [
         price: 40,
         size: 0,
         inCart: 0,
-        image: '/products/02_01_updated_1500x3393.jpg',
+        image: 'https://i.ibb.co/k9RB2VJ/02-01-updated-1500x3393.jpg',
         url: 'roger-roger-mastermind-skull-tee'
     },
     {
@@ -16,7 +16,7 @@ exports.productList = [
         price: 14,
         size: 'one size',
         inCart: 0,
-        image: '/products/11_01_V3_1500xda83.jpg',
+        image: 'https://i.ibb.co/R49Wk8r/11-01-V3-1500x4870.jpg',
         url: 'roger-roger-mastermind-socks',
     },
     {
@@ -26,7 +26,7 @@ exports.productList = [
         size: 0,
         price: 48,
         inCart: 0,
-        image: '/products/04_01_a8e324d3-8372-4261-b511-c10fd15bd8dd_1500xfeb4.jpg',
+        image: 'https://i.ibb.co/ngS6QSk/04-01-a8e324d3-8372-4261-b511-c10fd15bd8dd-1500xf8d4.jpg',
         url: 'roger-roger-fragment-manifest-your-dreams-tee',
     },
     {
@@ -36,7 +36,7 @@ exports.productList = [
         size: 0,
         price: 48,
         inCart: 0,
-        image: '/products/09_01_82eea021-15e3-4872-be9c-19a33feae4bb_1500xf953.jpg',
+        image: 'https://i.ibb.co/t3PS57K/09-01-82eea021-15e3-4872-be9c-19a33feae4bb-1500xf953.jpg',
         url: 'roger-roger-fragment-pink-sunrise-tee',
     },
     {
@@ -46,7 +46,7 @@ exports.productList = [
         size: 0,
         price: 48,
         inCart: 0,
-        image: '/products/08_01_9b000401-8888-4834-915e-808d09555ca4_1500xd4db.jpg',
+        image: 'https://i.ibb.co/L6hjTHv/08-01-9b000401-8888-4834-915e-808d09555ca4-1500xd4db.jpg',
         url: 'roger-roger-fragment-create-your-world-tee',
     },    {
         name: 'Mastermind Hat',
@@ -55,7 +55,7 @@ exports.productList = [
         size: 'one size',
         price: 20,
         inCart: 0,
-        image: '/products/12_01_updatefinal_1500xd26d.jpg',
+        image: 'https://i.ibb.co/Z10XDnF/12-01-updatefinal-1500xd26d.jpg',
         url: 'roger-roger-mastermind-hat',
     },    {
         name: 'Flame Tee',
@@ -64,7 +64,7 @@ exports.productList = [
         size: 0,
         price: 65,
         inCart: 0,
-        image: '/products/EXTRA_01_01_1500x121e.jpg',
+        image: 'https://i.ibb.co/gFxqvcc/EXTRA-01-01-1500x121e.jpg',
         url: 'roger-roger-flame-tee',
     },    {
         name: '3 pack socks',
@@ -73,7 +73,7 @@ exports.productList = [
         size: 'one size',
         price: 20,
         inCart: 0,
-        image: '/products/EXTRA_SOCKS_01_1500x6852.jpg',
+        image: 'https://i.ibb.co/51WpJCC/EXTRA-SOCKS-01-1500x6852.jpg',
         url: 'roger-roger-basic-3pack-socks',
 
     }
