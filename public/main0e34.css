@@ -2840,6 +2840,16 @@ p.sendowl-waiting {
     display: block
 }
 
+@media (max-width: 751px) {
+    .pswp--open {
+        display: none !important;
+    }
+}
+
+.pswp--open {
+    display: block
+}
+
 .pswp--zoom-allowed .pswp__img {
     cursor: default !important
 }
@@ -3590,6 +3600,29 @@ a.pswp__share--download:hover {
     .CD__title-cell {
         font-size: 12px;
         line-height: 1.1;
+    }
+}
+@media (max-width: 540px) {
+    .button1 {
+        margin-right: 79.1%!important;
+    }
+}
+
+@media (max-width: 425px) {
+    .button1 {
+        margin-right: 74%!important;
+    }
+}
+
+@media (max-width: 375px) {
+    .button1 {
+        margin-right: 71%!important;
+    }
+}
+
+@media (max-width: 320px) {
+    .button1 {
+        margin-right: 65%!important;
     }
 }
 
