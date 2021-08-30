@@ -65,13 +65,13 @@ Ok
         bottom.innerHTML = genInvert(1,'HELP')+
             genInvert(2,'SHOP ')+
             genInvert(3,'SOCIAL"')+
-            genInvert(4,'ABOUT"')+
-            genInvert(5,'CONTACT<')+
+            genInvert(4,'ABOUT"')
+/*            genInvert(5,'CONTACT<')+
             genInvert(6,',"LTP1')+
             genInvert(7,'TRON<')+
             genInvert(8,'TROFF<')+
             genInvert(9,'KEY ')+
-            genInvert(0,'SCREEN');
+            genInvert(0,'SCREEN');*/
         bottom.style.position = 'absolute';
         bottom.style.bottom = '0px';
         bottom.style.overflow = 'hidden';

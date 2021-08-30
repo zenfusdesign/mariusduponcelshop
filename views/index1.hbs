@@ -57,11 +57,55 @@
 
 <a href="/index1" aria-label="Homepage" class="N__link N__top_center N__person js-toplink">
       <span class="N__person-inner">
+
           <img
+
                   src="../Assets/roger-roger-logo.png?v=1606759885" style="width: 61px" class="N__custom_logo logo1">
       </span>
+      <div class="N__link N__top_center N__person js-toplink display leftcorner hourdisplay"></div>
     </a>
-  
+        <script>
+     setInterval(function(){
+            const clock = document.querySelector(".display");
+            let time = new Date();
+            let sec = time.getSeconds();
+            let min = time.getMinutes();
+            let hr = time.getHours();
+            let day = 'AM';
+            if(hr > 12){
+              day = 'PM';
+              hr = hr - 12;
+            }
+            if(hr == 0){
+              hr = 12;
+            }
+            if(sec < 10){
+              sec = '0' + sec;
+            }
+            if(min < 10){
+              min = '0' + min;
+            }
+            if(hr < 10){
+              hr = '0' + hr;
+            }
+            clock.textContent = hr + ':' + min + ':' + sec + day;
+          });
+
+          window.addEventListener("mousemove", cursor);
+
+          function cursor(e) {
+              let mousetracker1 = document.querySelector('.display3');
+              let mousetracker2 = document.querySelector('.display4');
+              mouseY = e.pageY * 1978;
+              mouseX = e.pageX * 1978;
+
+              mousetracker1.textContent = mouseX
+              mousetracker2.textContent = mouseY
+          }
+        </script>
+
+        <div class="N__link N__bottom_left display3 leftcorner1"></div>
+        <div class="N__link N__bottom_right display4 leftcorner2"></div>
 
   <a href="https://instagram.com" class="N__link N__top_left js-toplink">Social</a>
 

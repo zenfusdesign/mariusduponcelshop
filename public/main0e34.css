@@ -1387,10 +1387,6 @@ input.C__qty-input:active, input.C__qty-input:focus, input.C__qty-input:hover {
     text-transform: none!important;
 }
 
-.leftcorner {
-    position: absolute;
-    top: 9px;
-}
 
 .CA__button-checkout1{
     width: 28%;
@@ -2548,6 +2544,26 @@ a.N__link.js-active, a.N__link:hover {
     to {
         transform: translate(50%, 0%)
     }
+}
+
+.hourdisplay {
+    position: fixed;
+    top: 115px;
+    right: 50%;
+    transform: translateX(49%);
+
+}
+
+.leftcorner1 {
+    position: absolute;
+    top: 47px;
+    right: 25px;
+}
+
+.leftcorner2 {
+    position: fixed;
+    top: 47px;
+    left: 25px;
 }
 
 
@@ -3938,6 +3954,3 @@ textarea {
     margin-bottom: 20px;
 }
 
-.logo1 {
-    margin-top: -20px;
-}
