@@ -11,6 +11,10 @@
     display: table
 }
 
+.uppercase {
+    text-transform: uppercase!important;
+}
+
 .N__custom_logo1 {
     width: 70px !important;
 }
@@ -1373,7 +1377,29 @@ input.C__qty-input:active, input.C__qty-input:focus, input.C__qty-input:hover {
     color: red !important
 }
 
-.CA__button-checkout {
+.screen640x400 {
+    position: absolute;
+    top: -9px;
+    left: 9px;
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    text-transform: none!important;
+}
+
+.leftcorner {
+    position: absolute;
+    top: 9px;
+}
+
+.CA__button-checkout1{
+    width: 28%;
+    margin-left: 0;
+    margin-top: 30px;
+
+}
+
+.CA__button-checkout{
     width: 100%
 }
 

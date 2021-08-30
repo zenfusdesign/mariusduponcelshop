@@ -49,20 +49,59 @@
 }
 </style>
 </head>
-  <body class="container1"
-    >
+  <body >
+        <div class="container1">
+              <div class="container ">
+                  <img src="/Assets/roger-roger-logo.png?v=1606759885" style="width: 35px" class="N__custom_logo1" alt="CACTUS JACK">
+            <div style="text-align: center;">
+            </div>
 
-  <div class="container ">
-      <img src="/Assets/roger-roger-logo.png?v=1606759885" style="width: 35px" class="N__custom_logo1" alt="CACTUS JACK">
-<div style="text-align: center;">
-</div>
-<a href="/index1"><span>Shop<br></span></a>
-<a href="https://instagram.com"><span>Social<br></span></a>
-<a href="/About"><span>About<br></span></a>
-<a href="/Contact"><span>Contact<br></span></a>
-<meta charset="utf-8"></div>
+            <a href="/index1"><span>Shop<br></span></a>
+            <a href="https://instagram.com"><span>Social<br></span></a>
+            <a href="/About"><span>About<br></span></a>
+            <a href="/Contact"><span>Contact<br></span></a>
+        </div>
+            <div class="display leftcorner"></div>
+            <div class="display2 leftcorner" style="top: 9px; right: 9px"></div>
+    <script>
+ setInterval(function(){
+        const clock = document.querySelector(".display");
+        let time = new Date();
+        let sec = time.getSeconds();
+        let min = time.getMinutes();
+        let hr = time.getHours();
+        let day = 'AM';
+        if(hr > 12){
+          day = 'PM';
+          hr = hr - 12;
+        }
+        if(hr == 0){
+          hr = 12;
+        }
+        if(sec < 10){
+          sec = '0' + sec;
+        }
+        if(min < 10){
+          min = '0' + min;
+        }
+        if(hr < 10){
+          hr = '0' + hr;
+        }
+        clock.textContent = hr + ':' + min + ':' + sec + day;
+      });
 
+      let mousetracker = document.querySelector('.display2');
 
+      window.addEventListener("mousemove", cursor);
 
+      function cursor(e) {
+          mouseY = e.pageY * 10;
+          mouseX = e.pageX * 10;
+
+          mousetracker.textContent = mouseX + "/" + mouseY
+      }
+    </script>
+    <script src="/ibmloader.js"></script>
   </body>
+
 </html>

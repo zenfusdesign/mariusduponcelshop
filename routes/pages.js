@@ -1,7 +1,7 @@
 const express = require('express');
 const { homeCtrlFunction, cartCtrlFunction, skullteeCtrlFunction, shopCtrlFunction, ContactCtrlFunction,
     AboutCtrlFunction, ssteeCtrlFunction, socksCtrlFunction, hatCtrlFunction, sunriseteeCtrlFunction,
-    dreamsteeCtrlFunction, flameteeCtrlFunction, packsocksCtrlFunction, worldteeCtrlFunction
+    dreamsteeCtrlFunction, flameteeCtrlFunction, packsocksCtrlFunction, worldteeCtrlFunction,
 } = require('../controllers/pagesCtrlFile');
 
 const router = express.Router();
@@ -20,6 +20,5 @@ router.get('/roger-roger-fragment-manifest-your-dreams-tee', dreamsteeCtrlFuncti
 router.get('/roger-roger-flame-tee', flameteeCtrlFunction);
 router.get('/roger-roger-basic-3pack-socks', packsocksCtrlFunction);
 router.get('/roger-roger-fragment-create-your-world-tee', worldteeCtrlFunction);
-
 module.exports = router;
 

@@ -30,6 +30,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <link href="../Assets/ms-icon-144x144ea57.png?v=6105199869634354362" rel="shortcut icon" sizes="16x16 32x32 64x64">
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 
 <link href="/main0e34.css?v=16357540465480959826" rel="stylesheet" type="text/css" media="all" />
 <script src="https://js.stripe.com/v3/"></script>
@@ -88,8 +89,17 @@
 <div style="text-align: center;">
 
     <body class="fr contact eu">
+      <div id="successgrp"class="container displaynone">
+        <div class="C__empty">
+          <p></p>
+          <p><a href="/index1"><a class="uppercase">THANK YOU FOR CONTACTING ROGER ROGER</a> <br><br>A member of our team will get in touch with you.</a></p>
+        </div>
+         <button class="ButtonCallout CA__button-checkout1">
+              Go to Shopping
+         </button>
+      </div>
     <div id="wrap" ><h2 id="contacth2">contact ROGER ROGER</h2>
-        <form accept-charset="UTF-8" action="https://www.supremenewyork.com/contact" data-remote="true" id="form-contact"
+        <form accept-charset="UTF-8" class="contact-form" data-remote="true" id="form-contact"
               method="post"><input name="utf8" type="hidden" value="&#x2713;"/>
             <p class="name"><span><input class="nice-field nice-fade-field" id="first_name" name="first_name" placeholder="first name"
                                          type="text"/></span><span><input class="nice-field nice-fade-field"
@@ -161,8 +171,26 @@
     </div>
 
 </div>
+            <div class="c-loader displaynone" style="position: absolute; width:17px; transform:translate(-50%,-50%);">
+              <svg version="1.1" class="c-loader__svg" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 104 176" xml:space="preserve">
+                <path class="c-loader__scaffolding" d="M0 12v12h8v40h8v8h8v8h8v16h-8v8h-8v8H8v40H0v24h104v-24h-8v-40h-8v-8h-8v-8h-8V80h8v-8h8v-8h8V24h8V0H0v12zm88 0v4H16V8h72v4zm0 28v16h-8v8h-8v8h-8v8h-8v16h8v8h8v8h8v8h8v32H16v-32h8v-8h8v-8h8v-8h8V80h-8v-8h-8v-8h-8v-8h-8V24h72v16zm0 124v4H16v-8h72v4z" />
+                <path d="M24 36v4h8v-8h-8v4z" class="c-loader__block1" />
+                <path d="M40 36v4h8v-8h-8v4z" class="c-loader__block2" />
+                <path d="M56 36v4h8v-8h-8v4z" class="c-loader__block3" />
+                <path d="M72 36v4h8v-8h-8v4z" class="c-loader__block4" />
+                <path d="M32 44v4h8v-8h-8v4z" class="c-loader__block5" />
+                <path d="M48 44v4h8v-8h-8v4z" class="c-loader__block6" />
+                <path d="M64 44v4h8v-8h-8v4z" class="c-loader__block7" />
+                <path d="M40 52v4h8v-8h-8v4z" class="c-loader__block8" />
+                <path d="M56 52v4h8v-8h-8v4z" class="c-loader__block9" />
+                <path d="M48 60v4h8v-8h-8v4z" class="c-loader__block10" />
+                <path d="M48 76v4h8v-8h-8v4z" class="c-loader__block11" />
+                <path d="M48 108v4h8v-8h-8v4z" class="c-loader__block12" />
+              </svg>
+            </div>
   <script src="/payment.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="script2.js"></script>
+  <script src="loader.js"></script>
   </body>
 </html>

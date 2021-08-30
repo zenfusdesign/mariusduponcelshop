@@ -2,6 +2,63 @@ let carts = document.querySelectorAll('.btn-add')
 
 let products = [];
 
+const contactForm = document.querySelector('.contact-form');
+let firstName = document.getElementById('first_name');
+let lastName = document.getElementById('last_name');
+let email = document.getElementById('email');
+let subject = document.getElementById('subject');
+let messages = document.getElementById('message');
+
+let docdaaaa = document.getElementsByClassName('c-loader');
+
+function loader() {
+    document.querySelector('.c-loader').classList.remove('displaynone');
+    document.body.style.cursor = 'none';
+    window.onload=function(){
+        document.querySelector('.c-loader').classList.add('displaynone');
+        document.body.style.cursor = 'default';
+    }
+}
+
+if (docdaaaa.length == 1) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        document.querySelector('.c-loader').classList.remove('displaynone');
+        document.body.style.cursor = 'none';
+
+
+        let formData = {
+            firstName: firstName.value,
+            lastName: lastName.value,
+            email: email.value,
+            subject: subject.value,
+            messages: messages.value
+        }
+
+        let xhr = new XMLHttpRequest();
+        xhr.open('POST', '/');
+        xhr.setRequestHeader('content-type', 'application/json');
+        xhr.onload = function () {
+            console.log(xhr.responseText);
+            if (xhr.responseText == 'sucess') {
+                firstName.value = '';
+                lastName.value = '';
+                email.value = '';
+                subject.value = '';
+                messages.value = '';
+                document.getElementById('successgrp').classList.remove('displaynone')
+                document.getElementById('wrap').classList.add('displaynone');
+                document.querySelector('.c-loader').classList.add('displaynone');
+                document.body.style.cursor = 'default';
+            } else {
+                alert('something went wrong');
+            }
+        }
+
+        xhr.send(JSON.stringify(formData));
+    })
+}
+
 function previous1 () {
     let currentselect2 = document.getElementsByClassName("is-selected2")
 
@@ -117,8 +174,8 @@ function CartOpen () {
 }
 
 async function getProducts() {
-    const response  = await axios.get('https://roger-roger-b38ef.ondigitalocean.app/products')
-    //const response  = await axios.get('http://localhost:5000/products')
+    //const response  = await axios.get('https://roger-roger-b38ef.ondigitalocean.app/products')
+    const response  = await axios.get('http://localhost:5000/products')
     console.log(response.data)
     products = response.data.products
 
