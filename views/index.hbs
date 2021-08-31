@@ -62,7 +62,6 @@
             <a href="/Contact"><span>Contact<br></span></a>
         </div>
             <div class="display" style="top: 9px;position: absolute;right: 50%;transform: translateX(50%);"></div>
-            <div class="display2" style="top: 9px; right: 9px; position: absolute;"></div>
     <script>
  setInterval(function(){
         const clock = document.querySelector(".display");
@@ -89,19 +88,7 @@
         }
         clock.textContent = hr + ':' + min + ':' + sec + day;
       });
-
-      let mousetracker = document.querySelector('.display2');
-
-      window.addEventListener("mousemove", cursor);
-
-      function cursor(e) {
-          mouseY = e.pageY * 10;
-          mouseX = e.pageX * 10;
-
-          mousetracker.textContent = mouseX + "/" + mouseY
-      }
     </script>
-    <script src="/ibmloader.js"></script>
   </body>
 
 </html>
