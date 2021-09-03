@@ -175,6 +175,7 @@ function CartOpen () {
 
 async function getProducts() {
     const response  = await axios.get('https://roger-roger-b38ef.ondigitalocean.app/products')
+    //const response  = await axios.get('http://localhost:5000/products')
     console.log(response.data)
     products = response.data.products
 

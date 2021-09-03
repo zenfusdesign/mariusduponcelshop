@@ -32,6 +32,9 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="../Assets/ms-icon-144x144ea57.png?v=6105199869634354362">
   <link href="../Assets/ms-icon-144x144ea57.png?v=6105199869634354362" rel="shortcut icon" sizes="16x16 32x32 64x64">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap" rel="stylesheet">
 
 <link href="/main0e34.css?v=16357540465480959826" rel="stylesheet" type="text/css" media="all" />
 <script src="https://js.stripe.com/v3/"></script>
@@ -63,26 +66,54 @@
                   src="../Assets/roger-roger-logo.png?v=1606759885" style="width: 61px" class="N__custom_logo logo1">
       </span>
     </a>
+    <nav role="navigation">
+      <div id="menuToggle">
 
-  <a href="https://instagram.com" class="N__link N__top_left js-toplink">Social</a>
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="#"><li>SHOP</li></a>
+          <a href="#"><li>ABOUT</li></a>
+          <a href="#"><li>SOCIAL</li></a>
+          <a href="#"><li>CONTACT</li></a>
+        </ul>
+      </div>
+    </nav>
 
-  <a href="/About=" class="N__link N__bottom_left">About</a>
-    <a class="N__link N__top_right js-toplink" onclick="DisplayCart(); CartOpen();">
-      Cart
-      <span class="sr-only">:</span>
-      <span class="N__cart_count js-cart-count">
-        <span class="datacount">0</span>
-        <span class="sr-only" >Items</span>
-      </span>
-    </a>
-  
+    <div class="navcontain">
+        <div class="petitcon">
+                <a class="N__link1 N__top_right js-toplink" onclick="DisplayCart(); CartOpen();">
+                  Cart
+                  <span class="sr-only">:</span>
+                  <span class="N__cart_count js-cart-count">
+                    <span class="datacount">0</span>
+                    <span class="sr-only" >Items</span>
+                  </span>
+                </a>
+        </div>
+        <nav class="nav-container">
+            <ul class="site-nav ">
+                <li class="site-nav--has-dropdown list--inline">
+                      <a href="https://instagram.com" class="">Social</a>
+                </li>
 
-  <a href="/Contact" class="N__link N__bottom_right">Contact</a>
+                <li class="site-nav--has-dropdown list--inline">
+                      <a href="/Contact" class="">Contact</a>
+                </li>
+
+                <li class="site-nav--has-dropdown list--inline">
+                      <a href="/About=" class="">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
 
 </nav>
-
     <div class="Wrap" id="js-wrap">
-      
 <div class="Header js-header"></div>
 
 

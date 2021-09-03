@@ -1,12 +1,12 @@
 exports.productList = [
     {
-        name: 'Skull Tee',
+        name: 'Muscadet',
         description: 'fucking nice t shirt',
         tag: '02_01_updated_1500x3393',
         price: 40,
         size: 0,
         inCart: 0,
-        image: 'https://i.ibb.co/k9RB2VJ/02-01-updated-1500x3393.jpg',
+        image: 'https://i.ibb.co/JvyfV8m/02-01-updated-grande3393.png',
         url: 'roger-roger-mastermind-skull-tee'
     },
     {
