@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="utf-8">
-  <title>THANK YOU | ROGER ROGER</title>
+  <title>THANK YOU | BUSTER</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
   <meta name="description" content=""><meta name="twitter:title" content="YOUR SHOPPING CART">
@@ -31,11 +31,14 @@
   <link rel="icon" type="image/png" sizes="96x96" href="../Assets/favicon-96x9614bf.png?v=12435803360369970359">
   <link rel="icon" type="image/png" sizes="16x16" href="../Assets/favicon-16x165d71.png?v=16157078672135185305">
   <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../Assets/ms-icon-144x144ea57.png?v=6105199869634354362">
   <link href="../Assets/ms-icon-144x144ea57.png?v=6105199869634354362" rel="shortcut icon" sizes="16x16 32x32 64x64">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap" rel="stylesheet">
 
 <link href="/main0e34.css?v=16357540465480959826" rel="stylesheet" type="text/css" media="all" />
 <script src="https://js.stripe.com/v3/"></script>
-
 <style id="shopify-dynamic-checkout-cart">@media screen and (min-width: 750px) {
   #shopify-dynamic-checkout-cart {
     min-height: 50px;
@@ -52,28 +55,51 @@
   <body onload="onLoadCartNumbers();" class="page-your-shopping-cart template-cart js-empty-cart ">
 
     <nav class="MainNavigation">
-<a href="/index1" aria-label="Homepage" class="N__link N__top_center N__person js-toplink">
-      <span class="N__person-inner">
-          <img
-                  src="../Assets/roger-roger-logo.png?v=1606759885" style="width: 61px" class="N__custom_logo logo1" alt="ROGER ROGER">
-      </span>
-    </a>
+    <nav role="navigation">
+      <div id="menuToggle">
+
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="#"><li>SHOP</li></a>
+          <a href="#"><li>ABOUT</li></a>
+          <a href="#"><li>SOCIAL</li></a>
+          <a href="#"><li>CONTACT</li></a>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="navcontain">
+        <div class="petitcon">
+                <a class="N__link1 N__top_right js-toplink" onclick="DisplayCart(); CartOpen();">
+                  Cart
+                  <span class="sr-only">:</span>
+                  <span class="N__cart_count js-cart-count">
+                    <span class="datacount">0</span>
+                    <span class="sr-only" >Items</span>
+                  </span>
+                </a>
+        </div>
+        <nav class="nav-container">
+            <ul class="site-nav ">
+                <li class="site-nav--has-dropdown list--inline">
+                      <a href="https://instagram.com" class="">Social</a>
+                </li>
+
+                <li class="site-nav--has-dropdown list--inline">
+                      <a href="/Contact" class="">Contact</a>
+                </li>
+
+                <li class="site-nav--has-dropdown list--inline">
+                      <a href="/About" class="">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
 
-  <a href="https://instagram.com" class="N__link N__top_left js-toplink">Social</a>
-
-  <a href="/About=" class="N__link N__bottom_left">About</a>
-    <a class="N__link N__top_right js-toplink" onclick="DisplayCart(); CartOpen();">
-      Cart
-      <span class="sr-only">:</span>
-      <span class="N__cart_count js-cart-count">
-        <span class="datacount">0</span>
-        <span class="sr-only" >Items</span>
-      </span>
-    </a>
-
-
-  <a href="/Contact" class="N__link N__bottom_right">Contact</a>
 
 </nav>
 
@@ -94,10 +120,7 @@
   </div>
 </div>
 
-      </main><footer class="Footer js-footer">
-               <div class="F__nav"><a href="faq.html" title="HELP" data-title="help" class="F__link"> HELP</a><a href="privacy-policy.html#CCPA" title="Do Not Sell My Personal Information" data-title="do not sell my personal information" class="F__link"> Do Not Sell My Personal Information</a><a href="terms.html" title="TERMS" data-title="terms" class="F__link"> TERMS</a><a href="privacy-policy.html" title="PRIVACY" data-title="privacy" class="F__link"> BORING STUFF</a></div>
-               </footer>
-
+      </main>
 <section
   id="CartDrawer"
   class="CartDrawer"

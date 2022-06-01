@@ -280,9 +280,6 @@ body.template-password input:hover, body.theme-BF.template-password input:hover 
     display: table
 }
 
-.navcontain {
-
-}
 
 @media (max-width: 1920px) {
     .petitcon {
@@ -325,6 +322,7 @@ body.template-password input:hover, body.theme-BF.template-password input:hover 
     right: 21%;
     position: fixed;
     top: -4px;
+    z-index: 100;
 }
 
 body {
@@ -2563,9 +2561,10 @@ a.ButtonCallout:hover, body input[type=submit].ButtonCallout:hover, button.Butto
     display: initial;
     width: 40vw;
     position: fixed;
-    z-index: 1000;
+    z-index: 99;
     top: 12px;
     left: 15%;
+    animation: 0.80s ease 0s 1 slideleft;
 }
 
 .site-nav--has-dropdown {
@@ -2663,7 +2662,7 @@ a.N__link.js-active, a.N__link:hover {
 
 a.N__top_center {
     top: 0;
-    z-index: 100000;
+    z-index: 100;
     right: 50%;
     transform: translateX(50%);
     animation: 0.80s ease 0s 1 slidewalou;

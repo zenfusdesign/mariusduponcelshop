@@ -210,11 +210,6 @@ function populateProducts () {
       class="PGI__title-link js-title js-product-title"
     >${product.name}</a>
   </h3>
-
-    <a href="/${product.url}" class="PGI__price" tabindex="-1">
-      $${product.price}
-    </a>
-
 </article>
             `
         )
