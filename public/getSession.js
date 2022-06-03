@@ -1,6 +1,6 @@
 let stage = 'prod';
 //let stage = 'prod';
-const host = stage === 'dev' ? 'http://localhost:5000' : 'https://roger-roger-b38ef.ondigitalocean.app';
+const host = stage === 'dev' ? 'http://localhost:5000' : 'https://stingray-app-7dqw6.ondigitalocean.app';
 
 const localStorageSession = localStorage.getItem('sessionId');
 
