@@ -353,19 +353,21 @@ function setItems(product) {
                     [currentProduct]: product
                 }
                 product.inCart = 0;
+                let add = document.getElementById('add-button');
                 let newsize = document.getElementById('_938qedafx').value;
                 product.size = "("+ 1 +")"+ newsize;
                 cartItems[currentProduct].inCart += 1;
                 if (newsize == 0) {
-                    product.size = 'one size'
+                    product.size = '30,5 x 25,7'
                 }
 
         } else {
+            let add = document.getElementById('add-button');
             let newsize = document.getElementById('_938qedafx').value;
             cartItems[currentProduct].size += " " +"("+ 1 +")"+ newsize;
             cartItems[currentProduct].inCart += 1;
             if (newsize == 0) {
-                cartItems[currentProduct].size = 'one size'
+                cartItems[currentProduct].size = '30,5 x 25,7'
             }
         }
 
@@ -375,15 +377,17 @@ function setItems(product) {
         cartItems = {
             [product.name]: product
         };
+        let add = document.getElementById('add-button');
         let newsize = document.getElementById('_938qedafx').value;
         let currentProduct = product.name;
         product.size = "("+ 1 +")"+ newsize;
         if (newsize == 0) {
-            product.size = 'one size'
+            product.size = '30,5 x 25,7'
         }
     }
 
     localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+    console.log(cartItems);
 }
 
 

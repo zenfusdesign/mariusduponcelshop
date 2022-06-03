@@ -36,9 +36,9 @@ exports.checkoutCtrlFunction = async (req, res) => {
         const session = await stripe.checkout.sessions.create({
             payment_method_types: ['card'],
             success_url: `${req.protocol}://${req.get('host')}/checkout/success`,
-            cancel_url: `${req.protocol}://${req.get('host')}/index1`,
+            cancel_url: `${req.protocol}://${req.get('host')}/`,
             shipping_address_collection: {
-                allowed_countries: ['US', 'GB']
+                allowed_countries: ['FR', 'GB', 'BE', 'SE']
             },
             line_items: productsToBuy()
         });

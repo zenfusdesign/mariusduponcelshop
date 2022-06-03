@@ -1,16 +1,3 @@
-.cf, .clearfix {
-    width: 100%;
-    height: 0;
-    clear: both;
-    font: 0/0 a
-}
-
-.cf:after, .clearfix:after {
-    clear: both;
-    content: "";
-    display: table
-}
-
 .uppercase {
     text-transform: uppercase!important;
 }
@@ -200,6 +187,10 @@ h1, h2, h3, h4, h5, h6 {
 .blur-up.lazyloaded {
     opacity: 1;
     filter: blur(0)
+}
+
+.btn-add {
+    z-index: 1;
 }
 
 .Loader {
