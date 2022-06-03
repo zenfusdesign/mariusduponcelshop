@@ -2,7 +2,7 @@ stage = 'prod';
 //stage = 'prod';
 const host = stage === 'dev' ? 'http://localhost:5000' : 'https://stingray-app-7dqw6.ondigitalocean.app';
 
-const stripe = Stripe('pk_test_51JOHrMGyuoCJq3eZg27ztkNzYHHzSm5CrNcXon1zppKeNxIgDN1bR63SDGFzMkECSWdmoNsaPkpZlyw0vrryDthK00exBuvydE');
+const stripe = Stripe('pk_live_51JOHrMGyuoCJq3eZPUmhFZHNBrGv3AxlSoCGaXEAWtrEqXAUCu7d4XZg8Ai5Y3RkYRhVZSockWTMTiQYmr0GjHRy00igEDMu5Bpk_live_51JOHrMGyuoCJq3eZPUmhFZHNBrGv3AxlSoCGaXEAWtrEqXAUCu7d4XZg8Ai5Y3RkYRhVZSockWTMTiQYmr0GjHRy00igEDMu5B');
 
 function startCheckout() {
     let startCheckout = document.getElementById("startCheckout");
